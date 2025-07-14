@@ -1,0 +1,1 @@
+{"name":"Local: bb","url":"f:\\SRBD\\bb.cpp","tests":[{"id":1752300121669,"input":"4\n1 2 3 4","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\SRBD\\bb.cpp","group":"local","local":true}

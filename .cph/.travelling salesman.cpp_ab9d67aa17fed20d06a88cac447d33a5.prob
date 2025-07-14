@@ -1,0 +1,1 @@
+{"name":"Local: travelling salesman","url":"f:\\SRBD\\travelling salesman.cpp","tests":[{"id":1752212965996,"input":"2\n2\n0 111\n112 0\n3\n0 1000 5000\n5000 0 1000\n1000  5000  0","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\SRBD\\travelling salesman.cpp","group":"local","local":true}

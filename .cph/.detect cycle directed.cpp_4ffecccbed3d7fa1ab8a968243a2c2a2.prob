@@ -1,0 +1,1 @@
+{"name":"Local: detect cycle directed","url":"f:\\SRBD\\detect cycle directed.cpp","tests":[{"id":1752042420363,"input":"5 5\n1 2 2 4 4 5 5 3 3 2","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\SRBD\\detect cycle directed.cpp","group":"local","local":true}
