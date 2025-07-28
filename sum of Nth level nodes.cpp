@@ -1,51 +1,44 @@
 #include <iostream>
-#include <vector>
+#include <utility>
 #include <cstring>
 #include <cmath>
-#include <utility>
-#include <climits>
-#include <stack>
 #include <algorithm>
+#include <vector>
+#include <stack>
 
 using namespace std;
 
 int main(){
 
     int n;
+    string stream;
     cin >> n;
-    string tree;
-    cin >> tree;
+    cin >> stream;
 
-    stack <char> st;
+    stack <int> st;
+
+    int len = stream.size();
     int ans = 0;
-    int temp = 0;
+    int answer = 0;
 
-    for(int i = 0; i < tree.size(); i++){
-
-        if(st.size() == n+1 && tree[i] - '0' > 0 && tree[i] - '0' <=9){
-            if(temp == 0){
-                temp += tree[i] -'0';
-            }
-            else{
-                temp *= 10 ;
-                temp +=  tree[i] -'0';
-            }     
-        }
-        else if(tree[i] == '('){
-            ans += temp;
-            temp  = 0;
+    for(int i = 0; i< len; i++){
+        if(stream[i] == '('){
+            answer+=ans;
+            ans = 0;
             st.push('(');
         }
-        
-        else if(tree[i] == ')'){
-            ans += temp;
-            temp = 0;
+        else if(stream[i] == ')'){
+            answer += ans;
+            ans = 0;
             st.pop();
         }
-        
+        else if(st.size() == n+1){
+            ans *= 10;
+            ans += stream[i] - '0';
+        }
     }
 
-    cout << ans << endl;
+    cout << answer << endl;
 
     return 0;
 }
